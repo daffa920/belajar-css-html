@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil dengan Sidebar</title>
+ <link rel="stylesheet" href="profil.css">
+</head>
+<body>
+
+<div class="container" id="container">
+
+    <!-- Konten Profil Tengah -->
+    <div class="main-content">
+
+        <img src="https://via.placeholder.com/150" class="profile-img" alt="Foto Profil">
+
+        <h2 class="name">Nama Lengkap</h2>
+        <p class="status">Pelajar / Programmer</p>
+
+        <p class="description">
+            Saya adalah seorang pelajar yang tertarik dengan dunia teknologi,
+            web development, dan desain modern.
+        </p>
+
+        <div class="info">
+            <p><span>Umur:</span> 16 Tahun</p>
+            <p><span>Kelas:</span> XI PPLG 1</p>
+            <p><span>Email:</span> example@gmail.com</p>
+            <p><span>Hobi:</span> Coding, Editing</p>
+        </div>
+
+    </div>
+
+    <!-- Sidebar Fitur Kanan -->
+    <div class="sidebar" id="sidebar">
+        <h3>Fitur</h3>
+        <ul>
+            <li>Dashboard</li>
+            <li>Edit Profil</li>
+            <li>Portofolio</li>
+            <li>Galeri</li>
+            <li>Pengaturan</li>
+            <li>Logout</li>
+        </ul>
+    </div>
+
+    <!-- Tombol Hide/Show -->
+    <button class="toggle-btn" onclick="toggleSidebar()">Hide</button>
+
+</div>
+
+<script>
+    function toggleSidebar() {
+        const container = document.getElementById("container");
+        const btn = document.querySelector(".toggle-btn");
+
+        container.classList.toggle("hide-sidebar");
+
+        if (container.classList.contains("hide-sidebar")) {
+            btn.innerText = "Show";
+        } else {
+            btn.innerText = "Hide";
+        }
+    }
+</script>
+
+</body>
+</html>
