@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <h1>Sistem Informasi Aakademi</h1>
+    <div class="kotaklogin">
+        <from action="login.html">
+            <label for="fname">Email</label>
+            <input type="Email" id="fname" name="firstname" placeholder="Email...">
+            <label for="1name">password</label>
+            <label for="password">Password</label>
+            <div class="password-box">
+                <input type="password" id="password" name="password" placeholder="Password..." required>
+                <i class="fa-solid fa-eye" onclick="togglePassword('password', this)"></i>
+            </div>
+        <label for="status">status</label>
+        <select id="stat" name="status">
+            <option value="Siswa">Siswa</option>
+            <option value="Guru">Guru</option>
+        </select>
+        <input type="submit" value="Login">
+        </from>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
